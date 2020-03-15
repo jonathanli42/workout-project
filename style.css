@@ -1,0 +1,341 @@
+@media only screen and (max-width: 600px) {
+    body, html {
+        background-color: #101820FF;
+        color:#fffef9;
+    }
+
+    .macroTable {
+        border: 1px solid #00b159 ;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .workoutDiv {
+        border: 1px solid #00b159 ;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    #height1 {
+        width: 5em;
+        border:none;
+        border-bottom:1px solid #00b159;
+        background-color:#101820FF;
+        color:  #fffef9;
+        text-align: center;
+    }
+    
+    #height2 {
+        width:  5em;
+        border:none;
+        border-bottom:1px solid #00b159;
+        background-color:#101820FF;
+        color:  #fffef9;
+        text-align: center;
+    }
+    #weight {
+        width: 5em;
+        border:none;
+        border-bottom:1px solid #00b159;
+        background-color:#101820FF;
+        color:  #fffef9;
+        text-align: center;
+    }
+    #age{
+        width: 5em;
+        border-radius: 5%;
+        border:none;
+        border-bottom:1px solid #00b159;
+        background-color:#101820FF;
+        color:  #fffef9;
+        text-align: center;
+    }
+
+    
+    .time {
+        width:  4em;
+        border:none;
+        border-bottom:1px solid #00b159;
+        background-color:#101820FF;
+        color:  #fffef9;
+        text-align: center;
+    }
+    .btn {
+        background-color:#D3D3D3;
+        color: black !important;
+    }
+
+    
+}
+@media only screen and (min-width: 760px) {
+    body, html {
+        background-color: #101820FF;
+        color:#fffef9;
+    }
+    
+    .macroTable {
+        border: 1px solid #00b159 ;
+        padding-left: 20vh;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width:100%;
+    }
+    
+      .workoutDiv {
+        border: 1px solid #00b159 ;
+        padding-left: 10vh;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width:100%;
+      }
+    #submitBtn {
+        padding-left: 10vh;
+    }
+    #submitBtn2 {
+        padding-left: 40%;
+    }
+    .macroBlock {
+        background-color: #00b159 ;
+        height: 100%;
+        width: 100%;
+        border-radius: 10%;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 25px;
+        padding-right: 25px;
+        color: #fffef9;
+    }
+    
+    #height1 {
+        width: 5em;
+        border:none;
+        border-bottom:1px solid #00b159;
+        background-color:#101820FF;
+        color:  #fffef9;
+        text-align: center;
+    }
+    
+    #height2 {
+        width:  5em;
+        border:none;
+        border-bottom:1px solid #00b159;
+        background-color:#101820FF;
+        color:  #fffef9;
+        text-align: center;
+    }
+    
+    .time {
+        width:  5em;
+        border:none;
+        border-bottom:1px solid #00b159;
+        background-color:#101820FF;
+        color:  #fffef9;
+        text-align: center;
+    }
+    
+    #weight {
+        width: 5em;
+        border:none;
+        border-bottom:1px solid #00b159;
+        background-color:#101820FF;
+        color:  #fffef9;
+        text-align: center;
+    }
+    #age{
+        width: 5em;
+        border-radius: 5%;
+        border:none;
+        border-bottom:1px solid #00b159;
+        background-color:#101820FF;
+        color:  #fffef9;
+        text-align: center;
+    }
+    
+    #submit {
+        background-color: #eeeeee;
+        color: #6f7c85;
+    }
+    
+    .btn {
+        background-color: #eeeeee;
+        color: black !important;
+    }
+    
+    #space {
+        padding: 10px;
+    }
+    
+    .plan {
+        padding-top:5vh;
+        padding-bottom:9vh;
+    }
+    
+    .workoutPlan {
+        padding-top:5vh;
+        padding-bottom:9vh;
+    }
+    .macroPlan {
+        padding-right: 10px;
+    }
+    
+    .spaceBtwnSubmit {
+        padding: 10px;
+    }
+    
+    .hoursInput {
+        width:  5em;
+        border:none;
+        border-bottom:1px solid #00b159;
+        background-color:#101820FF;
+        color:  #fffef9;
+        text-align: center;
+    }
+    
+    .lengthWorkout{
+        background-color: #00b159 ;
+        height: 100%;
+        width: 100%;
+        border-radius: 10%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 25px;
+        padding-right: 25px;
+        color: #fffef9;
+    }
+}
+
+
+
+@media only screen and (min-width : 1224px) {
+    body, html {
+        background-color: #101820FF;
+        color:#fffef9;
+    }
+    
+    .macroTable {
+        border: 1px solid #00b159 ;
+        padding-left: 40%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width:100%;
+    }
+    
+      .workoutDiv {
+        border: 1px solid #00b159 ;
+        padding-left: 40%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        width:100%;
+      }
+    #submitBtn {
+        padding-left: 10vh;
+    }
+    
+    .macroBlock {
+        background-color: #00b159 ;
+        height: 100%;
+        width: 100%;
+        border-radius: 10%;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 25px;
+        padding-right: 25px;
+        color: #fffef9;
+    }
+    
+    
+    #height1 {
+        width: 5em;
+        border:none;
+        border-bottom:1px solid #00b159;
+        background-color:#101820FF;
+        color:  #fffef9;
+        text-align: center;
+    }
+    
+    #height2 {
+        width:  5em;
+        border:none;
+        border-bottom:1px solid #00b159;
+        background-color:#101820FF;
+        color:  #fffef9;
+        text-align: center;
+    }
+    
+    .time {
+        width:  5em;
+        border:none;
+        border-bottom:1px solid #00b159;
+        background-color:#101820FF;
+        color:  #fffef9;
+        text-align: center;
+    }
+    
+    #weight {
+        width: 5em;
+        border:none;
+        border-bottom:1px solid #00b159;
+        background-color:#101820FF;
+        color:  #fffef9;
+        text-align: center;
+    }
+    #age{
+        width: 5em;
+        border-radius: 5%;
+        border:none;
+        border-bottom:1px solid #00b159;
+        background-color:#101820FF;
+        color:  #fffef9;
+        text-align: center;
+    }
+    
+    #submit {
+        background-color: #eeeeee;
+        color: #6f7c85;
+    }
+    
+    .btn {
+        background-color: #eeeeee;
+        color: black !important;
+    }
+    
+    #space {
+        padding: 10px;
+    }
+    
+    .plan {
+        padding-top:5vh;
+        padding-bottom:9vh;
+    }
+    
+    .workoutPlan {
+        padding-top:5vh;
+        padding-bottom:9vh;
+    }
+    .macroPlan {
+        padding-right: 10px;
+    }
+    
+    .spaceBtwnSubmit {
+        padding: 10px;
+    }
+    
+    .hoursInput {
+        width:  5em;
+        border:none;
+        border-bottom:1px solid #00b159;
+        background-color:#101820FF;
+        color:  #fffef9;
+        text-align: center;
+    }
+    
+    .lengthWorkout{
+        background-color: #00b159 ;
+        height: 100%;
+        width: 100%;
+        border-radius: 10%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 25px;
+        padding-right: 25px;
+        color: #fffef9;
+    }
+}

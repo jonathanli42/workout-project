@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+
+    <!---HEADER-->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Stay Fit</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Macronutrient Calculator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Workout Plan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Diet Plan</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <h1> Macronutrient Calculator</h1>
+    <div class="macroTable">
+        <table>
+            <tr>
+                <td> <span class="macroBlock">Age</span>
+                    <label>
+                        <span class="textArea">
+                            <input type="number" id="age" min="15" max="100" placeholder="15">
+                        </span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td> <span class="macroBlock">Units</span>
+                    <button class="btn btn-secondary button" type="button"><span id="usMeasurement">US</span></button>
+                    <button class="button btn btn-secondary"><span id="metricMeasurement">Metric</span></button>
+                </td>
+            </tr>
+            <tr>
+                <td> <span class="macroBlock">Height</span>
+                    <label> <input type="number" id="height1" min="3" max="8" placeholder="5">
+                        <span id="heightMetric"> ft. </span>
+                    </label>
+                    <label id="heightLabel"> <input type="number" id="height2" min="0" max="11" placeholder="0">
+                        <span id="heightMetric2"> in. </span>
+                    </label>
+                    <label id='input'></label>
+                </td>
+
+            </tr>
+            <tr>
+                <td> <span class="macroBlock">Gender</span>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="getGender"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span id="genderType">Male</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Male">
+                        <a class="dropdown-item" id="genderM">Male</a>
+                        <a class="dropdown-item" id="genderF">Female</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td> <span class="macroBlock">Current Weight</span>
+                    <label> <input type="number" id="weight" min="1" placeholder="165">
+                        <span id=weightUnits>lbs</span>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td> <span class="macroBlock">Workout Goal</span>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span id='weightGoal'>Maintain</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" id="weightGoalM">Maintain</a>
+                        <a class="dropdown-item" id="weightGoalL">Lose Weight</a>
+                        <a class="dropdown-item" id="weightGoalMG">Mass Gain</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td> <span class="macroBlock">Activity Level</span>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="actLevel" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <span id="activityLevel">Moderately Active (1-2 days a week)</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="Moderately Active (1-3 days a week)">
+                        <a class="dropdown-item" id="activityLevel1">Moderately Active (1-2 days a week)</a>
+                        <a class="dropdown-item" id="activityLevel2">Active (3-5 days a week)</a>
+                        <a class="dropdown-item" id="activityLevel3">Very Active (6-7 days a week)</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td> <span class="macroBlock">Diet Preference</span>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span id="diet">Regular</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="No Preference">
+                        <a class="dropdown-item" id="diet1">Regular</a>
+                        <a class="dropdown-item" id="diet2">Keto</a>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <div id="space"></div>
+        <label>
+            <span id="submitBtn"><input type="submit" id="submit" class="btn btn-success"></span>
+        </label>
+    </div>
+
+
+    <br></br>
+
+    <div class="plan">
+        <table>
+            <th>
+                <h2 id="suggestP"></h2>
+            </th>
+            <tr>
+                <span class="macroPlan">
+                    <td id="inputP"></td>
+                </span>
+            </tr>
+            <tr>
+                <td id="inputF"></td>
+            </tr>
+            <tr>
+                <td id="inputC"></td>
+            </tr>
+        </table>
+    </div>
+    <h1> Workout Plan </h1>
+    <div class="workoutDiv">
+
+            <table>
+                <tr>
+                    <td> <span class="lengthWorkout">Length of Workout:</span>
+                    <input type="number" class="time" min="0" max="3" id="hours" placeholder="0">hours
+                    <input type="number" class="time" min="0" max="60" id="mins" placeholder="0">mins
+                    </td>
+                </tr>
+                <tr>
+                    <td> <span id="spaceBtwnCardio"></span>
+                        <span class="lengthWorkout">Cardio</span>
+                        <span id="cardioYes">
+                            <button type="button" class="btn btn-light"> Yes </button>
+                        </span>
+                        <span id="cardioNo">
+                            <button type="button" class="btn btn-light"> No </button>
+                        </span>
+                        <span id="cardioInput"> 
+                            
+                        </span>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td> <span class="lengthWorkout">Intensity</span>
+                        <span id="lightInt">
+                            <button type="button" class="btn btn-light">Light</button>
+                        </span>
+                        <span id="modInt">
+                            <button type="button" class="btn btn-light">Moderate</button>
+                        </span>
+                        <span id="extInt">
+                            <button type="button" class="btn btn-light">Extreme</button>
+                        </span>
+
+                    </td>
+                </tr>
+                <tr>
+                    <th> <span class="lengthWorkout">Workout Plan</span>
+                        <span id="cables">
+                            <button type="button" class="btn btn-light">Cables</button>
+                        </span>
+                        <span id="machines">
+                            <button type="button" class="btn btn-light">Machines</button>
+                        </span>
+                        <span id="bw">
+                            <button type="button"class="btn btn-light">Bodyweight</button>     
+                        </span>
+                        <span id="bb">
+                            <button type="button" class="btn btn-light">Barbell</button>               
+                        </span>
+                        <span id="db">
+                            <button type="button" class="btn btn-light">Dumbbell</button>          
+                        </span>
+                    </th>
+                </tr>        
+            <tr>
+                <th> <span class="lengthWorkout">Focus Area(s)</span>
+                    <span id="chest">
+                        <button type="button" class="btn btn-light">Chest</button>
+                    </span>
+                    <span id="legs">
+                        <button type="button" class="btn btn-light">Legs</button>
+                    </span>
+                    <span id="tri">
+                        <button type="button" class="btn btn-light">Triceps</button>
+                    </span>
+                    <span id="bi">
+                        <button type="button" class="btn btn-light">Biceps</button>
+                    </span>
+                    <span id="back">
+                        <button type="button" class="btn btn-light">Back</button>
+                    </span>
+                    <span id="shoulders">
+                        <button type="button" class="btn btn-light"s>Shoulders</button>
+                    </span>
+                </th>
+            </tr>
+                <tr>
+                    
+                    <td>
+                        <span class="spaceBtwnSubmit"> </span>
+                        <span id="submitBtn2"><input type="submit" id="submit2" class="btn btn-success"></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+            <span class="spaceBtwnSubmit"> </span>
+        <div class="workoutPlan">
+                <table>
+                    <th>
+                        <h2 id="workoutTitle"></h2>
+                    </th>
+                    <tr>
+                        <td id="totalLength"></td>
+                    </tr>
+                    <tr>
+                        <td id="cardioT"></td>
+                    </tr>
+                    <tr>
+                        <td id="workoutBreakdown"></td>
+                    </tr>
+                </table>
+        </div>
+   
+        <span class="spaceBtwnSubmit" > </span>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"></script>
+        <script src="app.js"></script>              
+    
+       
+    </body>
+
+</html>
